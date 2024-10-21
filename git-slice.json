@@ -1,0 +1,13 @@
+{
+  "repoUrl": "https://github.com/crisprcoders/pro-university.com.git",
+  "folders": ["./"],
+  "branch": "main",
+  "ignore": [
+    ".github/workflows/deploy.prod.yml",
+    ".github/workflows/deploy.stag.yml",
+    "scripts",
+    ".github/workflows/git-slice.yml",
+    "apps/manager-app",
+    "apps/student-app"
+  ]
+}

@@ -1,0 +1,20 @@
+/* State=Default */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 16px;
+gap: 12px;
+
+position: absolute;
+width: 137px;
+height: 41px;
+left: 20px;
+top: 20px;
+
+/* Colors/Primary Colors/Brand Color */
+border: 1px solid #4f46e5;
+border-radius: 12px;

@@ -1,0 +1,98 @@
+import type { Config } from "tailwindcss";
+import colors, { black, neutral, white } from "tailwindcss/colors";
+
+// We want each package to be responsible for its own content.
+const config: Omit<Config, "content"> = {
+  theme: {
+    extend: {
+      colors: {
+        brand: "#4F46E5",
+        secondary: "#FFC107",
+        success: "#26CB17",
+        blue: {
+          900: "#1E1B4B",
+          800: "#332E81",
+          700: "#3730A3",
+          600: "#3730A3",
+          400: "#8881F8",
+          300: "#AAA5FC",
+          200: "#CAC7FE",
+          100: "#E2E0FF",
+          50: "#F5F4FF",
+        },
+        yellow: {
+          900: "#BB6902",
+          800: "#BB6902",
+          700: "#E29400",
+          600: "#FFCB2D",
+          500: "#FFC107",
+          400: "#FFCB2D",
+          300: "#FFF885",
+          200: "#FFFAB1",
+          100: "#FFFFC5",
+        },
+        red: {
+          900: "#7E0C1D",
+          800: "#83182C",
+          700: "#83182C",
+          600: "#B7192C",
+          500: "#DC3545",
+          400: "#EC474F",
+          300: "#F57779",
+          200: "#F9A8A8",
+          100: "#FCCFCF",
+          50: "#FFFBFB",
+        },
+        pink: {
+          900: "#B5078E",
+          800: "#C20B9A",
+          700: "#D225AC",
+          600: "#FF10CA",
+          500: "#FF46D6",
+          400: "#E146C0",
+          300: "#FD96E6",
+          200: "#FFA8EC",
+          100: "#F3B8F5",
+        },
+        green: {
+          900: "#052E05",
+          800: "#155314",
+          700: "#156212",
+          600: "#18A20E",
+          500: "#26CB17",
+          400: "#4EE63D",
+          300: "#75F165",
+          200: "#A9F99D",
+          100: "#D2FCCB",
+        },
+        black: {
+          900: "#111111",
+          800: "#155314",
+          700: "#156212",
+          600: "#1B1B1B",
+          500: "#282828",
+          400: "#4EE63D",
+          300: "#75F165",
+          200: "#A9F99D",
+          100: "#D2FCCB",
+        },
+        gray: {
+          700: "#565656",
+          600: "#757575",
+          500: "#777777",
+          400: "#979797",
+          300: "#AAAAAA",
+          200: "#BCBCBC",
+          100: "#D7D7D7",
+        },
+        other: {
+          base: "#111111",
+          black: { 600: "#1B1B1B", 500: "#282828" },
+          white: { 200: "#F1F0FF", 100: "#F4F4F4" },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
